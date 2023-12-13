@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand.woff2");
+}
+
+:root {
+  color-scheme: dark;
+
+  --black: #000000;
+  --soft-black: #13161c;
+  --dark: #232830;
+
+  --white: #FFFFFF;
+  --text-input-field: #F7F7F7;
+  --very-light-pink: #C7C7C7;
+
+  --hospital-violet: #6366F1;
+  --soft-violet: #A78BFA;
+  --complementary-violet: #C06CE5;
+
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--hospital-violet);
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  padding: 61px 0 0 0;
+  margin: 0;
+  height: 1000px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid var(--soft-black);
+  box-shadow: 0px 10px 28px -8px var(--dark);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  padding: 0 10px;
+}
+
+.navbar__menu-icon-container {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar__menu-icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar__logo-title {
+  height: 35px;
+}
+
+.navbar__shopping-cart {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.navbar__shopping-cart-count {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--hospital-violet);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: var(--md);
+}
+
+.navbar__shopping-cart-icon {
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve">
+ <desc>Created with Fabric.js 5.2.4</desc>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <g id="7d4f92a0-765a-48c3-ab19-34efbe90c23c"/>
+   <g id="svg_16" transform="matrix(0 0.0292855 0.0292855 0 2131.01 82.6152)">
+    <path d="m-2798.16,-70314.51l3,-1603l28,-88c60,-192 139,-320 278,-450c158,-148 332,-229 553,-257c51,-6 650,-10 1638,-10l1558,0l0,1575c0,1733 3,1639 -61,1806c-115,297 -362,515 -684,602l-80,21l-1618,3l-1617,4l2,-1603zm2557,741c344,-138 628,-252 630,-254c3,-4 161,-1394 161,-1420c0,-6 -127,-110 -282,-230c-156,-121 -408,-318 -561,-437c-152,-120 -281,-218 -285,-218c-4,0 -296,133 -649,296c-588,271 -642,298 -647,322c-3,15 -51,317 -106,672c-55,355 -102,659 -105,677c-6,31 -4,32 242,204c136,95 401,280 588,411c277,194 344,238 364,233c13,-3 305,-119 650,-256z" fill="#6366f1" fill-rule="nonzero" id="svg_17" stroke-dashoffset="0" stroke-miterlimit="4"/>
+   </g>
+   <g id="svg_18" transform="matrix(0 0.0292855 0.0292855 0 2161.32 94.7574)">
+    <path d="m6256.89,-67240.15c2,-21 9,-89 14,-152c5,-63 11,-116 13,-118c4,-3 222,-18 670,-44c109,-6 200,-10 202,-7c2,2 -85,39 -193,82c-244,97 -702,276 -706,276c-2,0 -2,-17 0,-37z" fill="#6366f1" fill-rule="nonzero" id="svg_19" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-7434.77 -3340.49)"/>
+   </g>
+   <g id="svg_20" transform="matrix(0 0.0292855 0.0292855 0 2139.1 99.1705)">
+    <path d="m6608.89,-67951.15c152,-197 340,-440 417,-540c77,-99 140,-180 142,-179c5,6 193,1010 189,1014c-5,5 -910,63 -993,63c-31,0 -27,-6 245,-358z" fill="#6366f1" fill-rule="nonzero" id="svg_21" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-7583 -2591.5)"/>
+   </g>
+   <g id="svg_22" transform="matrix(0 0.0292855 0.0292855 0 2146.21 65.2579)">
+    <path d="m5770.89,-67734.15c-212,-65 -411,-127 -443,-136c-32,-9 -54,-20 -50,-23c9,-9 651,-270 662,-270c4,0 55,116 114,258c125,303 121,292 111,292c-5,-1 -182,-55 -394,-121z" fill="#6366f1" fill-rule="nonzero" id="svg_23" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-6452.5 -2835.03)"/>
+   </g>
+   <g id="svg_24" transform="matrix(0 0.0292855 0.0292855 0 2131.92 115.072)">
+    <path d="m7312.89,-68305.15c-46,-237 -80,-434 -75,-438c4,-4 68,-34 141,-68c105,-48 132,-57 132,-44c0,30 -108,974 -112,977c-2,2 -41,-190 -86,-427z" fill="#6366f1" fill-rule="nonzero" id="svg_25" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-8103.26 -2353.82)"/>
+   </g>
+   <g id="svg_26" transform="matrix(0 0.0292855 0.0292855 0 2129.9 60.5475)">
+    <path d="m5436.89,-68435.15l216,-432l15,34c8,19 57,136 108,260c52,124 101,241 109,261l15,37l-332,136c-183,75 -335,136 -340,136c-4,0 90,-194 209,-432z" fill="#6366f1" fill-rule="nonzero" id="svg_27" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-6292.94 -2288)"/>
+   </g>
+   <g id="svg_28" transform="matrix(0 0.0292855 0.0292855 0 2124.26 55.9204)">
+    <path d="m5204.89,-68153.15c3,-14 38,-234 77,-490c39,-256 75,-468 78,-473c4,-4 62,33 129,83l122,90l-201,402c-111,222 -203,405 -206,408c-3,3 -2,-6 1,-20z" fill="#6366f1" fill-rule="nonzero" id="svg_29" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-6135.59 -2098.64)"/>
+   </g>
+   <g id="svg_30" transform="matrix(0 0.0292855 0.0292855 0 2105.62 86.393)">
+    <path d="m7085.89,-68808.15c-5,-2 -305,-41 -665,-86c-360,-45 -659,-85 -663,-90c-8,-6 740,-699 754,-699c6,0 563,816 593,868c7,12 1,14 -19,7z" fill="#6366f1" fill-rule="nonzero" id="svg_31" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-7161.87 -1479.51)"/>
+   </g>
+   <g id="svg_32" transform="matrix(0 0.0292855 0.0292855 0 2103.89 68.9974)">
+    <path d="m5523.89,-69096.15l-123,-91l28,-12c15,-6 217,-99 449,-207c233,-107 420,-190 417,-185c-10,16 -636,588 -643,587c-3,0 -61,-42 -128,-92z" fill="#6366f1" fill-rule="nonzero" id="svg_33" stroke-dashoffset="0" stroke-miterlimit="4" transform="translate(-6577.02 -1425.39)"/>
+   </g>
+  </g>
+ </g>
+</svg>
