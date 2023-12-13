@@ -1,4 +1,8 @@
-# Project Title
+<div id="header" align="center">
+  <img src="./public/assets/icons/logo-name.svg" height="100">
+</div>
+
+----
 
 A simple e-commerce web app built with Node.js, Express, EJS, and MongoDB.
 
