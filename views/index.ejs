@@ -13,10 +13,13 @@
   <header>
     <%- include('components/navbar.ejs') %>
   </header>
-  <main>
-    <% for( let i=0; i < 30; i++ ) { %>
-      <h1>Hello World!</h1>
-      <% } %>
+  <main class="main">
+    <%- include('components/search.ejs') %>
+      <div class="products__container">
+        <% for( let i=0; i < 10; i++ ) { %>
+          <%- include('components/product-card.ejs', {i}) %>
+            <% } %>
+      </div>
   </main>
 </body>
 

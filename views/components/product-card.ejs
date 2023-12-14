@@ -1,0 +1,17 @@
+<div class="product-card__container">
+  <img class="product-card__img"
+    src="https://play-lh.googleusercontent.com/a-/ALV-UjXE6J2ouvF14lmJ62HzVgn2hXRfCU8xpqeZaLpWBW3wmg" alt="img"
+    srcset="">
+
+  <div class="product-card__info">
+    <div>
+      <p class="product-card__price">$ 120,00</p>
+      <h4 class="product-card__name">Round shelf</h4>
+    </div>
+    <% if (i % 2==0) { %>
+      <div class="product-card__add-shopping-cart"></div>
+      <% } else { %>
+        <div class="product-card__delete-shopping-cart"></div>
+        <% } %>
+  </div>
+</div>
