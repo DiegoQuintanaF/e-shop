@@ -1,4 +1,4 @@
-<div class="product-card__container">
+<div class="product-card__container" id="product-<%- i %>">
   <img class="product-card__img"
     src="https://play-lh.googleusercontent.com/a-/ALV-UjXE6J2ouvF14lmJ62HzVgn2hXRfCU8xpqeZaLpWBW3wmg" alt="img"
     srcset="">
@@ -11,7 +11,7 @@
     <% if (i % 2==0) { %>
       <div class="product-card__add-shopping-cart"></div>
       <% } else { %>
-        <div class="product-card__delete-shopping-cart"></div>
+        <div class=" product-card__delete-shopping-cart"></div>
         <% } %>
   </div>
 </div>

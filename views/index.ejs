@@ -20,7 +20,42 @@
           <%- include('components/product-card.ejs', {i}) %>
             <% } %>
       </div>
+
+
   </main>
+  <aside class="product-info__container">
+    <div class="product-info__close-icon"></div>
+    <img class="product-info__img"
+      src="https://play-lh.googleusercontent.com/a-/ALV-UjXE6J2ouvF14lmJ62HzVgn2hXRfCU8xpqeZaLpWBW3wmg" alt="product">
+    <div class="product-info__bottom">
+      <div class="product-info__img-dots">
+        <span class="product-info__img-dot product-info__img-dot--active"></span>
+        <span class="product-info__img-dot"></span>
+        <span class="product-info__img-dot"></span>
+      </div>
+
+      <article>
+        <p class="product-info__bottom-price">$ 120,00</p>
+        <h3 class="product-info__bottom-name">
+          Round shelf
+        </h3>
+      </article>
+
+      <p class="product-info__bottom-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, exercitationem deserunt expedita totam
+        mollitia perspiciatis commodi ratione facere dolor consequuntur quod. Id ducimus, blanditiis repellat
+        perspiciatis laboriosam ad architecto provident.
+      </p>
+      <div class="product-info__add-cart-container">
+        <button class="product-info__add-cart-buttom">
+          <span class="product-info__add-cart-icon"></span>
+          Add to cart
+        </button>
+      </div>
+    </div>
+
+  </aside>
 </body>
+<script type="module" src="/main.mjs"></script>
 
 </html>
