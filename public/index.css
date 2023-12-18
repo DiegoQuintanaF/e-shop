@@ -54,7 +54,7 @@ a:hover {
 
 header {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   width: 100%;
   background-color: var(--dark);
@@ -368,26 +368,23 @@ header {
   background-color: var(--complementary-violet);
 }
 
-.product-info__container {
-  position: fixed;
-  top: 60px;
-  left: 0;
+
+
+.product-info__container[open] {
   width: 100vw;
-  min-height: calc(100dvh - 60px);
-  background-color: var(--dark);
-  z-index: 1;
-  transform: translate(100%);
-
-  transition: transform 0.3s ease-in-out;
-
+  max-width: none;
+  height: calc(100dvh - 60px);
+  max-height: none;
+  top: 60px;
+  outline: none;
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: minmax(300px, 400px) auto;
-  overflow: scroll;
+  grid-template-rows: 100vw auto;
+  background-color: var(--dark);
 }
 
-.product-info__container-active {
-  transform: translate(0);
+.product-info__container {
+  border: none;
 }
 
 .product-info__close-icon {
@@ -443,7 +440,6 @@ header {
   flex-direction: column;
   gap: 30px;
   color: var(--text-input-field);
-  padding-bottom: 120px;
 }
 
 .product-info__bottom-price {
@@ -459,20 +455,46 @@ header {
 .product-info__bottom-description {
   font-size: var(--md);
   font-weight: 400;
-  padding-bottom: 120px;
 }
 
 .product-info__add-cart-container {
   height: 120px;
   width: 100%;
-  margin-top: 20px;
 
-  background-color: #fff;
-  position: fixed;
+  background-color: var(--dark);
+  position: sticky;
   bottom: 0;
   left: 0;
 
   display: grid;
   place-content: center;
 
+  box-shadow: 0px -9px 34px -3px var(--dark);
+}
+
+.product-info__add-cart-buttom {
+  width: 70vw;
+  height: 60px;
+  border-radius: 12px;
+  background-color: var(--hospital-violet);
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: var(--lg);
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info__add-cart-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/icons/shopping-cart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

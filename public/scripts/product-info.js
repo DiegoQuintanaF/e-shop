@@ -1,11 +1,18 @@
-const cartIcon = document.querySelector('.navbar__shopping-cart')
-const menu = document.querySelector('.product-info__container')
-// const exit = document.querySelector('.navbar__menu-close-icon')
+const productInfo = document.querySelector('.product-info__container')
+const productInfoClose = productInfo.querySelector('.product-info__close-icon')
 
-cartIcon.addEventListener('click', () => {
-  menu.classList.toggle('product-info__container-active')
+productInfo.addEventListener('click', e => {
+  const dialogDimensions = productInfo.getBoundingClientRect()
+  if (
+    e.clientX < dialogDimensions.left ||
+    e.clientX > dialogDimensions.right ||
+    e.clientY < dialogDimensions.top ||
+    e.clientY > dialogDimensions.bottom
+  ) {
+    productInfo.close()
+  }
 })
 
-// exit.addEventListener('click', () => {
-//   menu.classList.toggle('navbar__menu-active')
-// })
+productInfoClose.addEventListener('click', () => {
+  productInfo.close()
+})
