@@ -373,9 +373,9 @@ header {
 .product-info__container[open] {
   width: 100vw;
   max-width: none;
-  height: calc(100dvh - 60px);
+  height: calc(100dvh);
   max-height: none;
-  top: 60px;
+  top: 0;
   outline: none;
   display: grid;
   grid-auto-flow: row;
