@@ -14,7 +14,16 @@ class InternalServerError extends Error {
   }
 }
 
+class UnauthorizedActionError extends Error {
+  constructor(message) {
+    super(message)
+    this.name = 'UnauthorizedActionError'
+    this.status = 401
+  }
+}
+
 export {
   NotFoundError,
-  InternalServerError
+  InternalServerError,
+  UnauthorizedActionError
 }
