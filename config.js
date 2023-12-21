@@ -1,8 +1,6 @@
 import 'dotenv/config'
-import { join } from 'node:path'
 
-const currentDirectory = new URL('.', import.meta.url).pathname
-const projectRoot = join(currentDirectory, '..')
+const projectRoot = new URL('.', import.meta.url).pathname
 
 export default {
   port: process.env.PORT || 3000,
