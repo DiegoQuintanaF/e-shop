@@ -1,10 +1,12 @@
 import express from 'express'
-import config from '../config.js'
-import { errorHandler, notFoundHandler } from './middlewares/errorHandler.js'
-import { routerApp } from './network/routes.js'
 import swaggerUi from 'swagger-ui-express'
 import YAML from 'yamljs'
 import helmet from 'helmet'
+import config from '../config.js'
+
+import { errorHandler, notFoundHandler } from './middlewares/errorHandler.js'
+import { routerApp } from './network/routes.js'
+import { bootstrap } from './utils/bootstrap.js'
 
 const swaggerDocument = YAML.load(`${config.projectRoot}/swagger.yaml`)
 
@@ -20,6 +22,4 @@ routerApp(app)
 app.all('*', notFoundHandler)
 app.use(errorHandler)
 
-app.listen(config.port, () => {
-  console.log(`Example app listening on ${config.host}:${config.port} !`)
-})
+bootstrap(app, config)
