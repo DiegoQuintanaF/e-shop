@@ -1,5 +1,5 @@
 import express from 'express'
-import config from './config.js'
+import config from '../config.js'
 import { errorHandler, notFoundHandler } from './middlewares/errorHandler.js'
 import { routerApp } from './network/routes.js'
 import swaggerUi from 'swagger-ui-express'
