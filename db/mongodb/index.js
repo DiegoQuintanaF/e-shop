@@ -1,16 +1,17 @@
 import mongoose from 'mongoose'
-import config from '../../config.js'
 import './models/category.model.js'
 import './models/customer.model.js'
 import './models/order.model.js'
 import './models/product.model.js'
+
+import { config } from '../../config.js'
 import { DatabaseConnectionError, InvalidQueryError, NotFoundDBError } from '../utils/dbErrors.js'
 
 const { dbUser, dbPassword, dbHost, dbName } = config
 
 const mongoUrl = `mongodb+srv://${dbUser}:${dbPassword}@${dbHost}/${dbName}?retryWrites=true&w=majority`
 
-const modelNames = {
+const models = {
   user: 'User',
   custumer: 'Custumer',
   category: 'Category',
@@ -18,7 +19,7 @@ const modelNames = {
   order: 'Order'
 }
 
-Object.freeze(modelNames)
+Object.freeze(models)
 
 const connect = async () => {
   try {
@@ -30,14 +31,14 @@ const connect = async () => {
   }
 }
 
-const findAll = async (coll) => {
-  coll = coll.toLowerCase()
-  if (!modelNames[coll]) {
+const findAll = async (coll, offset = 0, limit = 20) => {
+  if (!models[coll.toLowerCase()]) {
     throw new InvalidQueryError(`[db] Collection "${coll}" not found!`)
   }
+  console.log('coll -> ', coll)
 
   try {
-    const data = await mongoose.model(modelNames[coll]).find({})
+    const data = await mongoose.model(models[coll]).find({}, { __v: 0 })
     return data
   } catch (error) {
     throw new NotFoundDBError(error.message)
@@ -45,13 +46,12 @@ const findAll = async (coll) => {
 }
 
 const findOne = async (coll, id) => {
-  coll = coll.toLowerCase()
-  if (!modelNames[coll]) {
+  if (!models[coll.toLowerCase()]) {
     throw new InvalidQueryError(`[db] Collection "${coll}" not found!`)
   }
 
   try {
-    const data = await mongoose.model(modelNames[coll]).findOne({ _id: id })
+    const data = await mongoose.model(coll).findOne({ _id: id })
     return data
   } catch (error) {
     throw new NotFoundDBError(error.message)
@@ -59,23 +59,22 @@ const findOne = async (coll, id) => {
 }
 
 const insertOne = async (coll, data) => {
-  coll = coll.toLowerCase()
-  if (!modelNames[coll]) {
+  if (!models[coll.toLowerCase()]) {
     throw new InvalidQueryError(`[db] Collection "${coll}" not found!`)
   }
 
   try {
-    const result = await mongoose.model(coll).create(data)
+    const result = await mongoose.model(coll).insertMany(data)
     return result
   } catch (error) {
     throw new NotFoundDBError(error.message)
   }
 }
 
-export {
+export const db = {
   connect,
   findAll,
   findOne,
   insertOne,
-  modelNames as colls
+  models
 }
