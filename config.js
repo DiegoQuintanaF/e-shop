@@ -2,7 +2,7 @@ import 'dotenv/config'
 
 const projectRoot = new URL('.', import.meta.url).pathname
 
-export default {
+export const config = {
   port: process.env.PORT || 3000,
   host: process.env.HOST || 'http://localhost',
   dbUser: process.env.DB_USER,
