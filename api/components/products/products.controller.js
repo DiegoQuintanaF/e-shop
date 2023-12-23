@@ -1,4 +1,4 @@
-import { db } from '../../../db/mongodb/index.js'
+import { db } from '../../../db/index.js'
 import { InternalServerError } from '../../utils/apiErrors.js'
 
 const controller = (db) => {

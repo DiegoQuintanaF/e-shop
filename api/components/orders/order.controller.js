@@ -1,4 +1,4 @@
-import { db } from '../../../db/mongodb/index.js'
+import { db } from '../../../db/index.js'
 
 function controller(db) {
   const getOrders = async (req, res, next) => {
