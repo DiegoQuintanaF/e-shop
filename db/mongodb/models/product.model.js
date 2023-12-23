@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const productSchema = new mongoose.Schema({
   _id: {
-    type: mongoose.Schema.Types.UUID,
+    type: String,
     required: true
   },
   name: {
@@ -19,27 +19,10 @@ const productSchema = new mongoose.Schema({
     required: true
   },
   images: {
-    type: [{
-      url: {
-        type: String,
-        required: true
-      },
-      alt: {
-        type: String,
-        required: true
-      }
-    }],
-    required: [true, 'At least one image is required'],
-    validate: {
-      validator: function (images) {
-        return images.length >= 1
-      },
-      message: 'At least one image is required'
-    }
+    type: [String]
   },
-  category: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Category'
+  categoryId: {
+    type: Number
   }
 })
 
