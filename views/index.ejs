@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-shop">
   <title>E-Shop</title>
   <link rel="shortcut icon" href="/assets/icons/logo.svg">
   <link rel="stylesheet" href="index.css">
@@ -16,17 +17,14 @@
   <main class="main">
     <%- include('components/search.ejs') %>
       <div class="products__container">
-        <% for( let i=0; i < 10; i++ ) { %>
-          <%- include('components/product-card.ejs', {i}) %>
-            <% } %>
+
       </div>
 
 
   </main>
   <dialog class="product-info__container" aria-modal="true">
     <div class="product-info__close-icon"></div>
-    <img class="product-info__img"
-      src="https://play-lh.googleusercontent.com/a-/ALV-UjXE6J2ouvF14lmJ62HzVgn2hXRfCU8xpqeZaLpWBW3wmg" alt="product">
+    <img class="product-info__img" src="https://i.imgur.com/w3Y8NwQ.jpeg" alt="product">
     <div class="product-info__bottom">
       <div class="product-info__img-dots">
         <span class="product-info__img-dot product-info__img-dot--active"></span>
